@@ -3,18 +3,11 @@ package com.agil8.luber.bdd;
 public class Driver {
 
 	private String email;
+	private boolean availible;
 
-	public Driver(String string) {
-	this.setEmail(email);
-	}
-
-	public void setEmail(String email) {
+	Driver(String email, boolean availible) {
 		this.email = email;
-		
-	}
-
-	public String getEmail() {
-		return email;
+		this.availible = availible;
 	}
 
 }
