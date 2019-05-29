@@ -11,9 +11,14 @@ import cucumber.api.java.en.When;
 public class LuberSteps {
 	private List<Driver> drivers = new ArrayList <>();
 
-	@Given("^ayrton@test\\.com is a driver$")
-	public void ayrton_test_com_is_a_driver() {
-		drivers.add(new Driver("ayrton@test.com"));
+	@Given("^(.*) is a driver$")
+	public void ayrton_test_com_is_a_driver(String Driver) {
+		drivers.add(new Driver(Driver, true));
+	}
+	
+	@Given("^dave@test\\.com is an unavailable driver$")
+	public void dave_test_com_is_a_unavailable_driver() {
+		drivers.add(new Driver("dave@test.com", false));
 	}
 
 	@Given("^tony@test\\.com is a customer$")

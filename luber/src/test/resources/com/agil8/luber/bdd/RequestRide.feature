@@ -7,8 +7,13 @@ Feature: Request a ride
 
   Scenario: Tony books a ride
   Given ayrton@test.com is a driver
+  And dave@test.com is an unavailable driver
   And tony@test.com is a customer
+  
+  
 	When Tony requests a taxi
     Then Tony sees these drivers available
-      | email    |
-      | ayrton@test.com |
+      | email    |available|
+      | ayrton@test.com |true|
+      | dave@test.com |false|
+     
