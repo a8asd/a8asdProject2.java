@@ -4,11 +4,7 @@ public class Driver {
 
 	private String email;
 
-	public Driver(String email) {
+	Driver(String email) {
 		this.email = email;
-		// TODO Auto-generated constructor stub
 	}
-public String getEmail() {
-	return email;
-}
 }
