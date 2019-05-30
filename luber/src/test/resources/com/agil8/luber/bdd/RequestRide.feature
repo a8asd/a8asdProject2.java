@@ -6,14 +6,14 @@ Feature: Request a ride
   Tony: doesn't often use a taxi and is able-bodied
 
   Scenario: Tony books a ride
-  Given ayrton@test.com is a driver
-  And dave@test.com is an unavailable driver
+  Given ayrton@test.com is a driver at 0,5
+  And dave@test.com is an unavailable driver at 0,10
   And tony@test.com is a customer
   
   
 	When Tony requests a taxi
     Then Tony sees these drivers available
-      | email    |available|
-      | ayrton@test.com |true|
-      | dave@test.com |false|
+      | email   			  | available	| xPosition | yPosition |
+      | ayrton@test.com | true			|	0					|	5				|
+      | dave@test.com 	| false			|	0					|	10					|
      
