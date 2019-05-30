@@ -2,15 +2,15 @@ package com.agil8.luber.bdd;
 
 public class Customer {
 
-	private String customerName;
-	private int phoneNumber;
+	private String email;
+	private int phone;
 
-	public Customer(String customerName) {
-		this.customerName = customerName;
+	public Customer(String email) {
+		this.email = email;
 	}
 
-	public void setPhoneNumber(int phoneNumber) {
-		this.phoneNumber = phoneNumber;
+	public void setPhoneNumber(int phone) {
+		this.phone = phone;
 	}
 
 }
