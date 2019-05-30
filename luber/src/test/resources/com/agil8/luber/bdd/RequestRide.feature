@@ -15,5 +15,5 @@ Feature: Request a ride
     Then Tony sees these drivers available
       | email   			  | available	| xPosition | yPosition |
       | ayrton@test.com | true			|	0					|	5				|
-      | dave@test.com 	| false			|	0					|	10					|
+      
      
