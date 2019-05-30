@@ -23,4 +23,13 @@ public class Driver {
 	{
 		return this.yPosition;
 	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+		
+	}
+	
+	public String getEmail() {
+		return email;
+	}
 }
