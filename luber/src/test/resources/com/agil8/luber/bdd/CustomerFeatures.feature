@@ -6,7 +6,7 @@ Feature: Customer can add own phone number
   Tony: doesn't often use a taxi and is able-bodied
 
   Scenario: customer adds phone number
-    Given  tony@test.com is a customer
+    Given  tony@test.com is a phonelessCustomer
     When tony@test.com adds phonenumber 016359998844
     Then tony@test.com record is
       | email         | phone        |
