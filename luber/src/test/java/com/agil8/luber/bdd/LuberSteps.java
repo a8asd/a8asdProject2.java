@@ -3,6 +3,8 @@ package com.agil8.luber.bdd;
 import static org.junit.Assert.assertThat;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
@@ -44,21 +46,20 @@ public class LuberSteps {
 
 	@Then("^Tony sees these drivers available$")
 	public void tony_sees_these_drivers_available(DataTable table) {
-		table.diff(api.drivers);
+		table.diff(availableDrivers());
 		
 		
-		availableDrivers();
+		
 		
 		
 	}
 
 	private List<Driver> availableDrivers() {
-		for(Driver thisDriver : api.drivers)
-		{
-			double distance = Math.sqrt(Math.pow(thisDriver.getXPosition(), 2) + Math.pow(thisDriver.getYPosition(), 2));
-			System.out.println("DISTANCE " + distance);
+		return api.drivers.stream().filter(d -> {
 			
-			
-		}
+			double distance = Math.sqrt(Math.pow(d.getXPosition(), 2) + Math.pow(d.getYPosition(), 2));
+			return distance <= 5; 
+		}).collect(Collectors.toList());
+		
 	}
 }
