@@ -37,7 +37,6 @@ public class LuberSteps {
 		api.drivers.get(0).setEmail(newEmail);
 	}
 	
-		
 	@Then("^(.*) sees these drivers available$")
 	public void sees_these_drivers_available(String who,DataTable table) {
 		table.diff(availableDrivers());	
