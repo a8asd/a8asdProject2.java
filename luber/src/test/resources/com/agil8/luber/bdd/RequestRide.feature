@@ -14,3 +14,4 @@ Feature: Request a ride
     Then Tony sees these drivers available
       | email           | availible |
       | ayrton@test.com | true      |    	
+    
