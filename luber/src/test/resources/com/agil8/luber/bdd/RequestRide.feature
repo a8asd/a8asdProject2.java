@@ -13,7 +13,12 @@ Feature: Request a ride
   
 	When Tony requests a taxi
     Then Tony sees these drivers available
+<<<<<<< HEAD
       | email   			  	 | available	| xPosition | yPosition |
       | ayrton@test.com		 | true			|	0					|	5				|
       
      
+=======
+      | email   			  | available	| xPosition | yPosition |
+      | ayrton@test.com | true			|	0					|	5				|
+>>>>>>> branch 'master' of https://github.com/a8asd/a8asdProject2.java
