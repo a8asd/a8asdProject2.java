@@ -13,5 +13,7 @@ Feature: Request a ride
   
 	When Tony requests a taxi
     Then Tony sees these drivers available
-      | email   			  | available	| xPosition | yPosition |
-      | ayrton@test.com | true			|	0					|	5				|
+      | email   			  	 | available	| xPosition | yPosition |
+      | ayrton@test.com		 | true			|	0					|	5				|
+      
+     

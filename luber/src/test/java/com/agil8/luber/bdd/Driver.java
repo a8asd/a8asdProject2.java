@@ -12,6 +12,7 @@ public class Driver {
 		this.available = available;
 		this.xPosition = xPosition;
 		this.yPosition = yPosition;
+	
 	}
 	
 	public Long getXPosition()
@@ -22,5 +23,13 @@ public class Driver {
 	public Long getYPosition()
 	{
 		return this.yPosition;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getEmail() {
+		return email;
 	}
 }
