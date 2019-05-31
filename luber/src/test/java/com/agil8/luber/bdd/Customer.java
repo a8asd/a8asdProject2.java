@@ -3,14 +3,21 @@ package com.agil8.luber.bdd;
 public class Customer {
 
 	private String email;
-	private int phone;
+	private String phone;
 
-	public Customer(String email) {
+	Customer(String email) {
 		this.email = email;
 	}
 
-	public void setPhoneNumber(int phone) {
+	public void setPhoneNumber(String phone) {
 		this.phone = phone;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
 }
