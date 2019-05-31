@@ -12,6 +12,7 @@ public class Driver {
 		this.available = available;
 		this.xPosition = xPosition;
 		this.yPosition = yPosition;
+	
 	}
 	
 	public Long getXPosition()
